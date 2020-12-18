@@ -4,6 +4,7 @@
 
 
 <item>
+    <!--Progress Bar (Primary, Inner Ring)-->
     <shape
         android:shape="ring"
         android:thicknessRatio="24"

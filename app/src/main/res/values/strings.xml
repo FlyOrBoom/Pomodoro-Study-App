@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Pomodoro Study App</string>
+    <string name="DefaultProgressBarValue">00</string>
 </resources>

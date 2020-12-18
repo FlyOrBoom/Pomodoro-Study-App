@@ -10,4 +10,5 @@
     <color name="progressBarPrimaryColor">#4287f5</color>
     <color name="progressBarBackgroundColor">#ebebeb</color>
     <color name="progressBarSecondaryColor">#eb4034</color>
+    <color name="standardTextColor">#333333</color>
 </resources>
