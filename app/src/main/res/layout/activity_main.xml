@@ -7,8 +7,21 @@
     tools:context=".MainActivity">
 
     <!--Progress Bar Text-->
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/CompletedTasksText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Completed Tasks"
+        android:textColor="@color/standardTextColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inspiringMessageText" />
+
+    <TextView
+        android:id="@+id/progressBarNumberText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
@@ -39,13 +52,13 @@
         android:layout_height="@dimen/progressBarWidth"
         android:indeterminateOnly="false"
         android:progress="10"
-        android:rotation="-90"
         android:progressDrawable="@drawable/progressbar"
+        android:rotation="-90"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/inspiringMessageText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -75,4 +88,67 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/progressBarOverlay"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/newTaskBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/progressBarOverlay"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarOverlay" />
+
+    <TextView
+        android:id="@+id/timeWellSpentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Time Well Spent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/progressBarOverlay"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/timeWellSpentValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="3 h 15 min"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/progressBarOverlay"
+        app:layout_constraintTop_toBottomOf="@+id/timeWellSpentText" />
+
+    <TextView
+        android:id="@+id/DistractionsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Distractions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/progressBarOverlay"
+        app:layout_constraintTop_toBottomOf="@+id/timeWellSpentValueText" />
+
+    <TextView
+        android:id="@+id/DistractionsTextValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/progressBarOverlay"
+        app:layout_constraintTop_toBottomOf="@+id/DistractionsText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/inspiringMessageText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CompletedTasksText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
