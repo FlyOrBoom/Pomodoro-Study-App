@@ -93,6 +93,7 @@
         android:id="@+id/newTaskBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="launchNewTask"
         android:text="New Task"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/progressBarOverlay"
